@@ -1,3 +1,14 @@
+/* App.css */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +17,25 @@
   height: 40vmin;
   pointer-events: none;
 }
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,11 +45,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
 }
