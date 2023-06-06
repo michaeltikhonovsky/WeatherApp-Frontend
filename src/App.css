@@ -1,68 +1,131 @@
-/* App.css */
-
-
-html, body {
-  height: 100%;
+* {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
-.App {
+body {
+  background-color: #06283D;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(123deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.city {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
 }
-.app-container {
+
+.temp {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 15px;
+
+}
+
+.search {
+  width: 100%;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+.card-expand-enter {
+  height: 0;
+  opacity: 0;
+}
+
+.card-expand-enter-active {
+  height: 400px; /* Adjust the desired expanded height */
+  opacity: 1;
+  transition: height 300ms, opacity 300ms;
+}
+
+.card-expand-exit {
+  height: 400px; /* Adjust the desired expanded height */
+  opacity: 1;
+}
+
+.card-expand-exit-active {
+  height: 0;
+  opacity: 0;
+  transition: height 300ms, opacity 300ms;
+}
+.butt {
+  margin-left: 335px;
+  margin-top: -60px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 
-.header {
+.butt img {
+  width: 20px;
+  height: 20px;
+
+}
+
+.weather img {
+  width: 200px;
+  height: 200px;
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.details {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 50px;
+
 }
 
-.logo {
-  width: 50px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 10px; /* Adjust the margin as needed */
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.col {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.col img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
 }
+
