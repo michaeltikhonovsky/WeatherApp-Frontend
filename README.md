@@ -1,4 +1,4 @@
-## Weather App
+## User Interface
 ![weatherapp](https://github.com/michaeltikhonovsky/WeatherApp-Frontend/assets/127802019/903ee28e-aa2a-4de7-9bb8-22516300614a)
 ![weatherAppSearch](https://github.com/michaeltikhonovsky/WeatherApp-Frontend/assets/127802019/4c3ebb91-ffde-49ca-bf0d-36a711d6d08a)
 
